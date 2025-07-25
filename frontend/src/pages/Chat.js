@@ -31,7 +31,6 @@ import {
   Clear as ClearIcon,
   History as HistoryIcon,
 } from '@mui/icons-material';
-import { chatService } from '../services/api';
 import { useDocuments } from '../context/DocumentContext';
 import { useChat } from '../context/ChatContext';
 
@@ -154,6 +153,12 @@ const Chat = () => {
     }
   };
 
+  const handleClearChat = () => {
+    if (window.confirm('Are you sure you want to clear the chat history? This action cannot be undone.')) {
+      clearChat();
+    }
+  };
+
   return (
     <Container maxWidth="lg" sx={{ height: 'calc(100vh - 120px)', display: 'flex', flexDirection: 'column' }}>
       <Box sx={{ mb: 3 }}>
@@ -173,9 +178,10 @@ const Chat = () => {
                 label={`${messages.length} messages`}
                 variant="outlined"
                 size="small"
+                color="primary"
               />
               <IconButton
-                onClick={clearChat}
+                onClick={handleClearChat}
                 color="error"
                 size="small"
                 title="Clear chat history"

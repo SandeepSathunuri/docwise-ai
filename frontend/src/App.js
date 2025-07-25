@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import Documents from './pages/Documents';
 import Chat from './pages/Chat';
+import Analytics from './pages/Analytics';
 import { DocumentProvider } from './context/DocumentContext';
 import { ChatProvider } from './context/ChatContext';
 
@@ -43,6 +44,7 @@ function App() {
                   <Route path="/" element={<Dashboard />} />
                   <Route path="/documents" element={<Documents />} />
                   <Route path="/chat" element={<Chat />} />
+                  <Route path="/analytics" element={<Analytics />} />
                 </Routes>
               </Box>
             </Box>

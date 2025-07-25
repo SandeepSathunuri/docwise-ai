@@ -23,6 +23,7 @@ const Navbar = () => {
     { label: 'Dashboard', path: '/', icon: <DashboardIcon /> },
     { label: 'Documents', path: '/documents', icon: <DocumentIcon /> },
     { label: 'Chat', path: '/chat', icon: <ChatIcon /> },
+    { label: 'Analytics', path: '/analytics', icon: <BrainIcon /> },
   ];
 
   return (
