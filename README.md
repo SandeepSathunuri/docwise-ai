@@ -2,6 +2,9 @@
 
 A sophisticated Retrieval-Augmented Generation (RAG) system with a modern React frontend and Flask backend. This system allows users to upload documents (PDF, TXT, DOCX) and ask questions about their content using AI.
 
+## 🎥 Demo Videos
+https://github.com/user-attachments/assets/421377b0-75b6-4db8-9ecf-36104cc07364
+
 ## Features
 
 ### Backend Features
